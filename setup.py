@@ -1,0 +1,20 @@
+from setuptools import setup
+
+setup(name='aletheia',
+      version='1.0',
+      description='Unwrapping ReLU Networks',
+      url='https://github.com/ZebinYang/aletheia',
+      author='Zebin Yang and Aijun Zhang',
+      author_email='yangzb2010@hku.hk',
+      license='BSD',
+      packages=['aletheia'],
+      package_data={'aletheia': ['*.so']},
+      install_requires=['matplotlib', 'numpy', 'seaborn', 'scikit-learn', 'csaps==0.11.0'],
+      classifiers=['Development Status :: 4 - Beta',
+                   'Environment :: Console',
+                   'License :: OSI Approved :: BSD License',
+                   'Operating System :: MacOS :: MacOS X',
+                   'Operating System :: Microsoft :: Windows',
+                   'Operating System :: POSIX',
+                   'Programming Language :: Python'],
+      zip_safe=False)
