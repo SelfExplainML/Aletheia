@@ -102,11 +102,12 @@ clf_merge.local_inference_wald(tmpid).round(4)
 
 ## Citations
 Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang and Aijun Zhang. 2020. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification. [arXiv:2011.04041](https://arxiv.org/abs/2011.04041).
+
 ```latex
 @article{sudjianto2020unwrapping,
   title={Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification},
   author={Sudjianto, Agus and Knauth, William and Singh, Rahul and Yang, Zebin and Zhang, Aijun},
-  journal={arXiv preprint arXiv:2011.04041},
+  journal={arXiv:2011.04041},
   year={2020}
 }
 ```
