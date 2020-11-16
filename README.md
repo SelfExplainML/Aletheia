@@ -1,11 +1,11 @@
 # Aletheia 
-A Python package for unwrapping ReLU Networks
+A Python Package for Unwrapping Pre-trained ReLU Networks
 
 ## Installation 
 
 The following environments are required:
 
-- Python 3.7 or above
+- Python 3.7 or above | Linux
 - matplotlib>=3.3
 - numpy>=1.19.1 
 - pandas>=1.1.2
