@@ -101,7 +101,7 @@ clf_merge.local_inference_wald(tmpid).round(4)
 <img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Inference.png" width="480">
 
 ## Citations
-Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang and Aijun Zhang. 2020. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification. [arXiv:2011.04041](https://arxiv.org/abs/2011.04041).
+Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang and Aijun Zhang. 2020. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification. [arXiv:2011.04041](https://arxiv.org/abs/2011.04041)
 
 ```latex
 @article{sudjianto2020unwrapping,
