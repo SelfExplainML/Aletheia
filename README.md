@@ -1,5 +1,4 @@
 # Aletheia 
----------
 A Python package for unwrapping ReLU Networks
 
 ## Installation 
@@ -90,7 +89,7 @@ grid.fit(train_x, train_y)
 clf_merge = grid.best_estimator_
 clf_merge.summary()
 ```
-![CoCircleMergeSummaryTable](https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_MergeSummaryTable.png)
+<img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_MergeSummaryTable.png" width="480">
 
 Local Inference
 ```python 
@@ -98,8 +97,8 @@ tmpid = 0
 clf_merge.visualize2D_one_line(tmpid, figsize=(8, 8))
 clf_merge.local_inference_wald(tmpid).round(4)
 ```
-![CoCircleLocal](https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Local.png)
-![CoCircleInference](https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Inference.png)
+<img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Local.png" width="480">
+<img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Inference.png" width="480">
 
 ## Reference
 Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang, and Aijun Zhang. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification
