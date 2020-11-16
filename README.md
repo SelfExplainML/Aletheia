@@ -1,11 +1,11 @@
 # Aletheia 
-A Python package for unwrapping ReLU Networks
+A Python package for unwrapping ReLU DNNs
 
 ## Installation 
 
 The following environments are required:
 
-- Python 3.7 or above
+- Python 3.7 or above | Linux
 - matplotlib>=3.3
 - numpy>=1.19.1 
 - pandas>=1.1.2
@@ -39,7 +39,7 @@ plt.show()
 ```
 
 Train a ReLU Network
-```
+```python
 from sklearn.neural_network import MLPClassifier
 mlp = MLPClassifier(hidden_layer_sizes=[40] * 4, max_iter=2000, early_stopping=True, 
                     n_iter_no_change=100, validation_fraction=0.2,
