@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='aletheia',
       version='1.0',
       description='Unwrapping ReLU Networks',
-      url='https://github.com/ZebinYang/aletheia',
+      url='https://github.com/SelfExplainML/aletheia',
       author='Zebin Yang and Aijun Zhang',
       author_email='yangzb2010@hku.hk',
       license='BSD',
