@@ -1,11 +1,11 @@
 # Aletheia 
-A Python package for unwrapping ReLU Networks
+A Python package for unwrapping ReLU DNNs
 
 ## Installation 
 
 The following environments are required:
 
-- Python 3.7 or above
+- Python 3.7 or above | Linux
 - matplotlib>=3.3
 - numpy>=1.19.1 
 - pandas>=1.1.2
@@ -19,7 +19,7 @@ pip install git+https://github.com/SelfExplainML/aletheia.git
 
 ## Usage
 
-Load data
+**Load data** 
 ```python
 import numpy as np 
 import pandas as pd 
@@ -38,8 +38,8 @@ plt.legend(*scatter.legend_elements(), loc="upper right")
 plt.show()
 ```
 
-Train a ReLU Network
-```
+**Train a ReLU Net**
+```python
 from sklearn.neural_network import MLPClassifier
 mlp = MLPClassifier(hidden_layer_sizes=[40] * 4, max_iter=2000, early_stopping=True, 
                     n_iter_no_change=100, validation_fraction=0.2,
@@ -48,7 +48,7 @@ mlp = MLPClassifier(hidden_layer_sizes=[40] * 4, max_iter=2000, early_stopping=T
 mlp.fit(train_x, train_y)
 ```
 
-Run UnwrapperClassifier in Aletheia
+**UnwrapperClassifier**
 ```python
 from aletheia import *
 clf = UnwrapperClassifier(mlp.coefs_, mlp.intercepts_)
@@ -64,7 +64,7 @@ clf.visualize2D_regions(figsize=(8, 8), meshsize=300, show_label=False)
 ```
 ![CoCircleRegions](https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Regions.png)
 
-Simplification
+**Simplification**
 ```python 
 from sklearn.metrics import make_scorer, roc_auc_score
 from sklearn.model_selection import GridSearchCV, PredefinedSplit
@@ -91,7 +91,7 @@ clf_merge.summary()
 ```
 <img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_MergeSummaryTable.png" width="480">
 
-Local Inference
+**Local Inference**
 ```python 
 tmpid = 0
 clf_merge.visualize2D_one_line(tmpid, figsize=(8, 8))
@@ -100,5 +100,14 @@ clf_merge.local_inference_wald(tmpid).round(4)
 <img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Local.png" width="480">
 <img src="https://github.com/SelfExplainML/Aletheia/blob/master/examples/results/CoCircle_Inference.png" width="480">
 
-## Reference
-Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang and Aijun Zhang. 2020. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification. arXiv preprint arXiv:2011.04041 (https://arxiv.org/abs/2011.04041).
+## Citations
+Agus Sudjianto, William Knauth, Rahul Singh, Zebin Yang and Aijun Zhang. 2020. Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification. [arXiv:2011.04041](https://arxiv.org/abs/2011.04041)
+
+```latex
+@article{sudjianto2020unwrapping,
+  title={Unwrapping The Black Box of Deep ReLU Networks: Interpretability, Diagnostics, and Simplification},
+  author={Sudjianto, Agus and Knauth, William and Singh, Rahul and Yang, Zebin and Zhang, Aijun},
+  journal={arXiv:2011.04041},
+  year={2020}
+}
+```
