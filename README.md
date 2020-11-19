@@ -6,8 +6,8 @@ A Python package for unwrapping ReLU DNNs
 The following environments are required:
 
 - Python 3.7 or above | Linux
-- matplotlib>=3.3
-- numpy>=1.19.1 
+- matplotlib>=3.1.3
+- numpy>=1.18
 - pandas>=1.1.2
 - seaborn>=0.9.0
 - scikit-learn>=0.23.0
