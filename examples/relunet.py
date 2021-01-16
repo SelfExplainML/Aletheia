@@ -36,7 +36,7 @@ def MLPClassifier(input_dim, hidden_layer_sizes, regl1=0, regl2=0, lr=0.001, ran
             kernel_regularizer=regularizer))
 
     # compile model
-    model.compile(optimizer=keras.optimizers.Adam(lr=lr, clipnorm=1.0),
+    model.compile(optimizer=keras.optimizers.Adam(lr=lr),
                     loss='binary_crossentropy')
     return model
 
@@ -74,6 +74,6 @@ def MLPRegressor(input_dim, hidden_layer_sizes, regl1=0, regl2=0, lr=0.001, rand
             kernel_regularizer=regularizer))
 
     # compile model
-    model.compile(optimizer=keras.optimizers.Adam(lr=lr, clipnorm=1.0),
+    model.compile(optimizer=keras.optimizers.Adam(lr=lr),
                     loss='mean_squared_error')
     return model
