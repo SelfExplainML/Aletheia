@@ -11,7 +11,7 @@ The following environments are required:
 - pandas>=1.1.2
 - seaborn>=0.9.0
 - scikit-learn>=0.23.0
-- csaps>0.11.0
+- csaps>=0.11.0
 - tensorflow>2.0
 
 ```shell
