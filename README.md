@@ -5,17 +5,16 @@ A Python package for unwrapping ReLU Neural Networks
 
 The following environments are required:
 
-- Python 3.6 or above (Try Google Colab)
+- Python 3.6, 3.7, 3.8 (Try Google Colab)
 - matplotlib>=3.1.3
 - numpy>=1.18
 - pandas>=1.1.2
 - seaborn>=0.9.0
 - scikit-learn>=0.23.0
 - csaps>=0.11.0
-- tensorflow>2.0
 
 ```shell
-pip install aletheia-relunet-unwrapper
+pip install aletheia-dnn
 ```
 
 ## Usage
